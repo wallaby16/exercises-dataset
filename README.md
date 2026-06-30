@@ -43,7 +43,7 @@ is byte-for-byte identical to this repo's `videos/0025-EIeI8Vf.gif`. The assets 
 
 **Added in this repository** on top of the original ExerciseDB data:
 
-- 🇪🇸 Spanish, 🇮🇹 Italian, 🇹🇷 Turkish, and 🇷🇺 Russian translations of the instructions
+- 🇪🇸 Spanish, 🇮🇹 Italian, 🇹🇷 Turkish, 🇷🇺 Russian, and 🇨🇳 Chinese translations of the instructions
 - the interactive browser (`index.html`) and developer setup guide (`setup.html`)
 - formatting, cleanup, and 1:1 media alignment
 
@@ -105,7 +105,7 @@ A fully client-side exercise explorer with:
 - Live search across all 1,324 exercises
 - Filter by category, equipment, and target muscle
 - Infinite scroll grid with thumbnail previews
-- Click any card to see full details, GIF animation, and instructions in English, Spanish, Italian, Turkish, or Russian
+- Click any card to see full details, GIF animation, and instructions in English, Spanish, Italian, Turkish, Russian, or Chinese
 
 ### `setup.html` — Developer Setup Guide
 
