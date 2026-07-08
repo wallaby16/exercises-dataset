@@ -35,8 +35,6 @@
 - step-by-step instructions in 6 languages (🇬🇧 English, 🇪🇸 Spanish, 🇮🇹 Italian, 🇹🇷 Turkish, 🇷🇺 Russian, 🇨🇳 Chinese)
 - the interactive browser (`index.html`) and developer setup guide (`setup.html`)
 
-> If you are a rights holder and want anything clarified, please [open an issue](../../issues).
-
 ---
 
 ## 📋 Table of Contents
