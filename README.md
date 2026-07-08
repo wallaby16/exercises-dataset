@@ -11,7 +11,7 @@
   <img src="videos/0334-DsgkuIt.gif" width="120" alt="dumbbell lateral raise" />
 </p>
 
-**A comprehensive, ready-to-use fitness exercise dataset with 1,324 exercises — each with an animation GIF, 180×180 thumbnail image, category, body-part, equipment, target and muscle-group data, and step-by-step instructions in 6 languages (English, Spanish, Italian, Turkish, Russian, Chinese). Exercise media courtesy of [Gym visual](https://gymvisual.com/).**
+**A comprehensive, ready-to-use fitness exercise dataset with 1,324 exercises — each with an animation GIF, 180×180 thumbnail image, category, body-part, equipment, target and muscle-group data, and step-by-step instructions in 6 languages (English, Spanish, Italian, Turkish, Russian, Chinese).**
 
 [![Exercises](https://img.shields.io/badge/Exercises-1324-blue?style=flat-square)](data/exercises.json)
 [![Animation GIFs](https://img.shields.io/badge/Animation%20GIFs-1324-brightgreen?style=flat-square)](videos/)
@@ -22,39 +22,16 @@
 
 </div>
 
----
-
-## 📱 Mobile App — LogPress
-
-> This dataset is the exercise **data layer behind [LogPress](https://github.com/hasaneyldrm/logpress-public)** — an AI-assisted workout tracking app. Its 1,324 exercises — animation GIFs, 180×180 thumbnails, target / muscle-group and equipment data, and multilingual instructions — are exactly what the app uses to build workouts, demonstrate proper form, and log training sessions.
->
-> ### 📲 Looking for the app?
->
-> Head to **[hasaneyldrm/logpress-public](https://github.com/hasaneyldrm/logpress-public)** — the public React Native source for LogPress.
->
-> **Building your own fitness app?** You're in the right place: this repository gives you the same structured exercise data that LogPress runs on — ready to drop straight into your backend.
+> **📱 Powers the [LogPress](https://github.com/hasaneyldrm/logpress-public) app** — an AI-assisted workout tracker; this dataset is its exercise data layer. Building your own fitness app? Drop it straight into your backend.
 
 ---
 
-## 🖼️ Media Attribution
-
-> The exercise **media (thumbnail images and animation GIFs)** in this repository is the property of **Gym visual** and is redistributed here **with permission**, at **180×180** resolution.
->
-> **© Gym visual — https://gymvisual.com/**
->
-> Every record in [`data/exercises.json`](data/exercises.json) carries an `attribution` field with this notice, and images/GIFs live under [`images/`](images/) and [`videos/`](videos/). See [`NOTICE.md`](NOTICE.md) for the full terms. Please keep the attribution intact and respect the 180×180 resolution limit.
->
-> **Reuse:** the media remains the property of Gym visual and its use is governed by **[Gym visual's Terms & Conditions](https://gymvisual.com/content/3-terms-and-conditions-of-use)**. If you want to use it in your own project, review those terms and obtain your own license from Gym visual — cloning this repo does not grant you a license to the media.
-
----
-
-## 📦 Data Source & Attribution
-
-The exercise **media (180×180 thumbnail images and animation GIFs)** is © **[Gym visual](https://gymvisual.com/)** and included in this repository with the rights holder's written permission — see the [media attribution](#-media-attribution) above and [`NOTICE.md`](NOTICE.md). Each record's `image` / `gif_url` points to the local asset.
+## 📦 Data Source
 
 **This repository provides:**
 
 - 1,324 exercises with category, body-part, equipment, target and muscle-group data
+- an animation GIF + 180×180 thumbnail for every exercise (media © [Gym visual](https://gymvisual.com/) — see [License](#-license--use))
 - step-by-step instructions in 6 languages (🇬🇧 English, 🇪🇸 Spanish, 🇮🇹 Italian, 🇹🇷 Turkish, 🇷🇺 Russian, 🇨🇳 Chinese)
 - the interactive browser (`index.html`) and developer setup guide (`setup.html`)
 
@@ -64,9 +41,7 @@ The exercise **media (180×180 thumbnail images and animation GIFs)** is © **[G
 
 ## 📋 Table of Contents
 
-- [Mobile App — LogPress](#-mobile-app--logpress)
-- [Media Attribution](#-media-attribution)
-- [Data Source & Attribution](#-data-source--attribution)
+- [Data Source](#-data-source)
 - [Overview](#-overview)
 - [Interactive Browser & Developer Setup](#-interactive-browser--developer-setup)
 - [File Structure](#-file-structure)
@@ -99,7 +74,7 @@ Each exercise entry contains:
 | Equipment | Equipment required (or `body weight` for bodyweight) |
 | Instructions | Step-by-step instructions for each exercise |
 | Available Languages | 🇬🇧 English · 🇪🇸 Spanish · 🇮🇹 Italian · 🇹🇷 Turkish · 🇷🇺 Russian · 🇨🇳 Chinese |
-| Media | 180×180 thumbnail (`image`) + animation GIF (`gif_url`) per exercise, courtesy of [Gym visual](https://gymvisual.com/) — see [media attribution](#-media-attribution) |
+| Media | 180×180 thumbnail (`image`) + animation GIF (`gif_url`) per exercise — media © Gym visual, see [License](#-license--use) |
 
 ---
 
@@ -147,8 +122,7 @@ exercises-dataset/
 - **`images/`, `videos/`** — 180×180 thumbnails and animation GIFs (© [Gym visual](https://gymvisual.com/), used with permission).
 - **`index.html`** — Standalone exercise browser. Open directly in any modern browser.
 - **`setup.html`** — Developer guide for DB setup, API integration, and LLM-assisted backend generation.
-
-> **Media** (`images/`, `videos/`) is © [Gym visual](https://gymvisual.com/) and redistributed with permission — see [`NOTICE.md`](NOTICE.md).
+- **`LICENSE`, `NOTICE.md`** — MIT (code/data) + the Gym visual media terms.
 
 ---
 
