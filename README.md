@@ -22,6 +22,8 @@
 > **© Gym visual — https://gymvisual.com/**
 >
 > Every record in [`data/exercises.json`](data/exercises.json) carries an `attribution` field with this notice, and images/GIFs live under [`images/`](images/) and [`videos/`](videos/). See [`NOTICE.md`](NOTICE.md) for the full terms. Please keep the attribution intact and respect the 180×180 resolution limit.
+>
+> **Reuse:** the media remains the property of Gym visual and its use is governed by **[Gym visual's Terms & Conditions](https://gymvisual.com/content/3-terms-and-conditions-of-use)**. If you want to use it in your own project, review those terms and obtain your own license from Gym visual — cloning this repo does not grant you a license to the media.
 
 ---
 
@@ -407,6 +409,6 @@ console.log("First 6 exercises:", randomWorkout.map(e => e.name));
 This repository is a **developer setup wizard and structured exercise dataset** — exercise metadata, multilingual instruction translations, and 180×180 exercise media.
 
 - The base exercise data originates from **ExerciseDB v1** (see [Data Source & Attribution](#-data-source--attribution)); review [ExerciseDB's terms](https://oss.exercisedb.dev/docs) before any reuse.
-- **Exercise media (images & GIFs) is © [Gym visual](https://gymvisual.com/)** and redistributed here **with permission**, at 180×180 resolution — see [`NOTICE.md`](NOTICE.md). Keep the `© Gym visual — https://gymvisual.com/` attribution intact.
+- **Exercise media (images & GIFs) is © [Gym visual](https://gymvisual.com/)** and redistributed here **with permission**, at 180×180 resolution — see [`NOTICE.md`](NOTICE.md). Keep the `© Gym visual — https://gymvisual.com/` attribution intact. Reuse is governed by [Gym visual's Terms & Conditions](https://gymvisual.com/content/3-terms-and-conditions-of-use); obtain your own license there before reusing the media.
 - This repository does **not** claim ownership of the underlying exercise content or media.
 - If you are a rights holder and wish to have anything removed or clarified, please [open an issue](../../issues) or contact the maintainer.
