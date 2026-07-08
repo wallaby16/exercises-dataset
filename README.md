@@ -1,25 +1,27 @@
+> **📱 This is a data / developer repository.** Looking for the mobile app? → **[hasaneyldrm/logpress-public](https://github.com/hasaneyldrm/logpress-public)**
+
 <div align="center">
 
 # 💪 Exercises Dataset
 
-**A developer setup wizard + structured, multilingual exercise dataset — scaffold your own exercise app backend (DB schema, API code, LLM prompt) over 1,324 exercises with category, body-part, equipment, target and muscle-group data and step-by-step instructions in 6 languages (English, Spanish, Italian, Turkish, Russian, Chinese). Exercise media is not included.**
+**A developer setup wizard + structured, multilingual exercise dataset — scaffold your own exercise app backend (DB schema, API code, LLM prompt) over 1,324 exercises with category, body-part, equipment, target and muscle-group data and step-by-step instructions in 6 languages (English, Spanish, Italian, Turkish, Russian, Chinese). Includes exercise media (180×180 thumbnails + animation GIFs) courtesy of [Gym visual](https://gymvisual.com/).**
 
 [![Exercises](https://img.shields.io/badge/Exercises-1324-blue?style=flat-square)](data/exercises.json)
 [![Languages](https://img.shields.io/badge/Languages-6-green?style=flat-square)](#-overview)
 [![Format](https://img.shields.io/badge/Format-JSON-orange?style=flat-square)](data/exercises.json)
-[![Media](https://img.shields.io/badge/Media-not%20included-lightgrey?style=flat-square)](#-notice--exercise-media-is-not-included)
+[![Media](https://img.shields.io/badge/Media-1324%20(180×180)-blue?style=flat-square)](#-media-attribution)
 
 </div>
 
 ---
 
-## ⚠️ Notice — exercise media is not included
+## 🖼️ Media Attribution
 
-> **This repository is a developer setup wizard and structured exercise dataset.** The exercise **media (thumbnail images and animation GIFs) is not included here.**
+> The exercise **media (thumbnail images and animation GIFs)** in this repository is the property of **Gym visual** and is redistributed here **with permission**, at **180×180** resolution.
 >
-> There are **multiple, conflicting ownership claims** over this media, so it is **not redistributed in this repository.** Each record keeps a `media_id` (the original ExerciseDB media reference); the dataset itself ships exercise metadata and multilingual instruction translations (EN, ES, IT, TR, RU, ZH).
+> **© Gym visual — https://gymvisual.com/**
 >
-> **If you are the rights holder of this media, please [open an issue](../../issues) or contact the maintainer.**
+> Every record in [`data/exercises.json`](data/exercises.json) carries an `attribution` field with this notice, and images/GIFs live under [`images/`](images/) and [`videos/`](videos/). See [`NOTICE.md`](NOTICE.md) for the full terms. Please keep the attribution intact and respect the 180×180 resolution limit.
 
 ---
 
@@ -27,7 +29,7 @@
 
 The base exercise **data** in this repository originates from **[ExerciseDB v1 by AscendAPI](https://oss.exercisedb.dev)** ([API docs](https://oss.exercisedb.dev/docs)), obtained via a [Kaggle re-host by *omarxadel*](https://www.kaggle.com/datasets/omarxadel/fitness-exercises-dataset).
 
-The associated **media (images & animation GIFs) is _not_ included** in this repository — see the [notice](#-notice--exercise-media-is-not-included) above. Each record's `media_id` is the original ExerciseDB v1 media id (e.g. `2gPfomN`); the official CDN serves the corresponding asset at `static.exercisedb.dev/media/{media_id}.gif` for anyone entitled to use it.
+The associated **media (180×180 images & animation GIFs) is included** in this repository courtesy of **[Gym visual](https://gymvisual.com/)** — see the [media attribution](#-media-attribution) above. Each record's `image` / `gif_url` points to the local asset, and `media_id` is the original ExerciseDB v1 media id (e.g. `2gPfomN`).
 
 **Added in this repository** on top of the base data:
 
@@ -74,7 +76,7 @@ Each exercise entry contains:
 | Equipment | Equipment required (or `body weight` for bodyweight) |
 | Instructions | Step-by-step instructions for each exercise |
 | Available Languages | 🇬🇧 English · 🇪🇸 Spanish · 🇮🇹 Italian · 🇹🇷 Turkish · 🇷🇺 Russian · 🇨🇳 Chinese |
-| Media ID | Reference id of the original ExerciseDB media (the media itself is **not** bundled — see [notice](#-notice--exercise-media-is-not-included)) |
+| Media | 180×180 thumbnail (`image`) + animation GIF (`gif_url`) per exercise, courtesy of [Gym visual](https://gymvisual.com/) — see [media attribution](#-media-attribution) |
 
 ---
 
@@ -82,7 +84,7 @@ Each exercise entry contains:
 
 This repository includes two ready-to-use HTML tools — no server required, just open in a browser.
 
-> **Note:** since the media is not bundled, the browser displays exercise **metadata and instructions** only; thumbnail and GIF slots are empty.
+> **Note:** the browser displays each exercise's 180×180 thumbnail and animation GIF alongside its metadata and instructions.
 
 ### `index.html` — Exercise Browser
 
@@ -108,18 +110,22 @@ A step-by-step guide for integrating the dataset into your own application:
 exercises-dataset/
 ├── data/
 │   └── exercises.json       # Full dataset — 1,324 exercise records (JSON array)
+├── images/                  # 1,324 × 180×180 thumbnails  (© Gym visual)
+├── videos/                  # 1,324 × 180×180 animation GIFs  (© Gym visual)
 ├── index.html               # Interactive exercise browser (client-side, no server needed)
 ├── setup.html               # Developer setup guide (DB import + API integration)
+├── NOTICE.md                # Media attribution & license terms
 └── README.md
 ```
 
 ### Key Files
 
-- **`data/exercises.json`** — The primary data file. A JSON array of 1,324 exercise objects with all metadata. The `image` and `gif_url` fields are `null`; `media_id` holds the original ExerciseDB media reference.
+- **`data/exercises.json`** — The primary data file. A JSON array of 1,324 exercise objects with all metadata. `image` / `gif_url` point to the local 180×180 assets, and each record carries an `attribution` field; `media_id` holds the original ExerciseDB media reference.
+- **`images/`, `videos/`** — 180×180 thumbnails and animation GIFs (© [Gym visual](https://gymvisual.com/), used with permission).
 - **`index.html`** — Standalone exercise browser. Open directly in any modern browser.
 - **`setup.html`** — Developer guide for DB setup, API integration, and LLM-assisted backend generation.
 
-> **Media** (`images/`, `videos/`) is intentionally **not** part of this repository — see the [notice](#-notice--exercise-media-is-not-included).
+> **Media** (`images/`, `videos/`) is © [Gym visual](https://gymvisual.com/) and redistributed with permission — see [`NOTICE.md`](NOTICE.md).
 
 ---
 
@@ -186,9 +192,10 @@ Each record in `data/exercises.json` follows this structure:
 | `muscle_group` | `string` | Primary synergist muscle group |
 | `secondary_muscles` | `array[string]` | Additional muscles involved |
 | `target` | `string` | Primary target muscle (e.g. `"biceps"`, `"pectoralis major"`) |
-| `media_id` | `string` | Original ExerciseDB media reference id (e.g. `"2gPfomN"`) — media not bundled |
-| `image` | `null` | Reserved for a thumbnail path; `null` (media not included) |
-| `gif_url` | `null` | Reserved for an animation path; `null` (media not included) |
+| `media_id` | `string` | Original ExerciseDB media reference id (e.g. `"2gPfomN"`) |
+| `image` | `string` | Path to the 180×180 thumbnail (e.g. `"images/0001-2gPfomN.jpg"`) |
+| `gif_url` | `string` | Path to the 180×180 animation GIF (e.g. `"videos/0001-2gPfomN.gif"`) |
+| `attribution` | `string` | Media copyright notice — `"© Gym visual — https://gymvisual.com/"` |
 | `created_at` | `string` | ISO 8601 timestamp of record creation |
 
 ### Sample Record
@@ -212,8 +219,9 @@ Each record in `data/exercises.json` follows this structure:
   "secondary_muscles": ["hip flexors", "lower back"],
   "target": "abs",
   "media_id": "2gPfomN",
-  "image": null,
-  "gif_url": null,
+  "image": "images/0001-2gPfomN.jpg",
+  "gif_url": "videos/0001-2gPfomN.gif",
+  "attribution": "© Gym visual — https://gymvisual.com/",
   "created_at": "2026-03-18T12:31:32.854798+00:00"
 }
 ```
@@ -222,7 +230,7 @@ Each record in `data/exercises.json` follows this structure:
 
 ## 🎬 Sample Exercises
 
-> Media is not bundled (see [notice](#-notice--exercise-media-is-not-included)); the `media_id` of each example is shown for reference.
+> Each example ships a 180×180 thumbnail (`image`) and animation GIF (`gif_url`), © [Gym visual](https://gymvisual.com/).
 
 ### 1 — Barbell Bench Press · Chest
 
@@ -381,6 +389,7 @@ interface Exercise {
   media_id: string | null;
   image: string | null;
   gif_url: string | null;
+  attribution: string;
   created_at: string;
 }
 
@@ -395,9 +404,9 @@ console.log("First 6 exercises:", randomWorkout.map(e => e.name));
 
 ## 📄 License & Use
 
-This repository is a **developer setup wizard and structured exercise dataset** — exercise metadata and multilingual instruction translations. Exercise media is **not included**.
+This repository is a **developer setup wizard and structured exercise dataset** — exercise metadata, multilingual instruction translations, and 180×180 exercise media.
 
 - The base exercise data originates from **ExerciseDB v1** (see [Data Source & Attribution](#-data-source--attribution)); review [ExerciseDB's terms](https://oss.exercisedb.dev/docs) before any reuse.
-- **Exercise media (images & GIFs) is not included** in this repository — see the [notice](#-notice--exercise-media-is-not-included).
-- This repository does **not** claim ownership of the underlying exercise content.
+- **Exercise media (images & GIFs) is © [Gym visual](https://gymvisual.com/)** and redistributed here **with permission**, at 180×180 resolution — see [`NOTICE.md`](NOTICE.md). Keep the `© Gym visual — https://gymvisual.com/` attribution intact.
+- This repository does **not** claim ownership of the underlying exercise content or media.
 - If you are a rights holder and wish to have anything removed or clarified, please [open an issue](../../issues) or contact the maintainer.
