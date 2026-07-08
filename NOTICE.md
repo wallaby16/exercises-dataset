@@ -36,10 +36,4 @@ allow** — cloning this repo is not a license.
 
 The exercise **data** (names, categories, body parts, equipment, targets,
 muscle groups, and multilingual instructions) is separate from the media and
-originates from the ExerciseDB v1 lineage described in the
-[README](README.md#-data-source--attribution).
-
-## Rights holders
-
-If you are a rights holder and want anything clarified or removed, please
-[open an issue](../../issues).
+is released under the MIT License — see [`LICENSE`](LICENSE).

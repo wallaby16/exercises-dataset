@@ -416,4 +416,3 @@ This repository is a **developer setup wizard and structured exercise dataset** 
 - **Code, tooling, dataset structure, and instruction text** are released under the [MIT License](LICENSE).
 - **Exercise media (images & GIFs) is © [Gym visual](https://gymvisual.com/)** and redistributed here **with permission**, at 180×180 resolution — see [`NOTICE.md`](NOTICE.md) and the media exception in [`LICENSE`](LICENSE). Keep the `© Gym visual — https://gymvisual.com/` attribution intact. Reuse is governed by [Gym visual's Terms & Conditions](https://gymvisual.com/content/3-terms-and-conditions-of-use); obtain your own license there before reusing the media.
 - This repository does **not** claim ownership of the underlying exercise content or media.
-- If you are a rights holder and wish to have anything removed or clarified, please [open an issue](../../issues) or contact the maintainer.
