@@ -1,5 +1,3 @@
-> **📱 This is a data / developer repository.** Looking for the mobile app? → **[hasaneyldrm/logpress-public](https://github.com/hasaneyldrm/logpress-public)**
-
 <div align="center">
 
 # 💪 Exercises Dataset
@@ -19,8 +17,21 @@
 [![Animation GIFs](https://img.shields.io/badge/Animation%20GIFs-1324-brightgreen?style=flat-square)](videos/)
 [![Thumbnails](https://img.shields.io/badge/Thumbnails-1324-orange?style=flat-square)](images/)
 [![Languages](https://img.shields.io/badge/Languages-6-green?style=flat-square)](#-overview)
+[![Mobile App](https://img.shields.io/badge/App-LogPress-111111?style=flat-square&logo=react)](https://github.com/hasaneyldrm/logpress-public)
 
 </div>
+
+---
+
+## 📱 Mobile App — LogPress
+
+> This dataset is the exercise **data layer behind [LogPress](https://github.com/hasaneyldrm/logpress-public)** — an AI-assisted workout tracking app. Its 1,324 exercises — animation GIFs, 180×180 thumbnails, target / muscle-group and equipment data, and multilingual instructions — are exactly what the app uses to build workouts, demonstrate proper form, and log training sessions.
+>
+> ### 📲 Looking for the app?
+>
+> Head to **[hasaneyldrm/logpress-public](https://github.com/hasaneyldrm/logpress-public)** — the public React Native source for LogPress.
+>
+> **Building your own fitness app?** You're in the right place: this repository gives you the same structured exercise data that LogPress runs on — ready to drop straight into your backend.
 
 ---
 
@@ -52,6 +63,8 @@ The exercise **media (180×180 thumbnail images and animation GIFs)** is © **[G
 
 ## 📋 Table of Contents
 
+- [Mobile App — LogPress](#-mobile-app--logpress)
+- [Media Attribution](#-media-attribution)
 - [Data Source & Attribution](#-data-source--attribution)
 - [Overview](#-overview)
 - [Interactive Browser & Developer Setup](#-interactive-browser--developer-setup)
