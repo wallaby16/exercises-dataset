@@ -3,12 +3,12 @@
 # 💪 Exercises Dataset
 
 <p>
-  <img src="images/0025-EIeI8Vf.jpg" width="120" alt="barbell bench press" />
-  <img src="images/0043-qXTaZnJ.jpg" width="120" alt="barbell full squat" />
-  <img src="images/0032-ila4NZS.jpg" width="120" alt="barbell deadlift" />
-  <img src="images/0015-vrhHa6D.jpg" width="120" alt="pull-up" />
-  <img src="images/0294-NbVPDMW.jpg" width="120" alt="dumbbell biceps curl" />
-  <img src="images/0031-25GPyDY.jpg" width="120" alt="barbell curl" />
+  <img src="videos/0025-EIeI8Vf.gif" width="120" alt="barbell bench press" />
+  <img src="videos/0043-qXTaZnJ.gif" width="120" alt="barbell full squat" />
+  <img src="videos/0032-ila4NZS.gif" width="120" alt="barbell deadlift" />
+  <img src="videos/0652-lBDjFxJ.gif" width="120" alt="pull-up" />
+  <img src="videos/0294-NbVPDMW.gif" width="120" alt="dumbbell biceps curl" />
+  <img src="videos/0334-DsgkuIt.gif" width="120" alt="dumbbell lateral raise" />
 </p>
 
 **A comprehensive, ready-to-use fitness exercise dataset with 1,324 exercises — each with an animation GIF, 180×180 thumbnail image, category, body-part, equipment, target and muscle-group data, and step-by-step instructions in 6 languages (English, Spanish, Italian, Turkish, Russian, Chinese). Exercise media courtesy of [Gym visual](https://gymvisual.com/).**
@@ -18,6 +18,7 @@
 [![Thumbnails](https://img.shields.io/badge/Thumbnails-1324-orange?style=flat-square)](images/)
 [![Languages](https://img.shields.io/badge/Languages-6-green?style=flat-square)](#-overview)
 [![Mobile App](https://img.shields.io/badge/App-LogPress-111111?style=flat-square&logo=react)](https://github.com/hasaneyldrm/logpress-public)
+[![License](https://img.shields.io/badge/License-MIT%20%2B%20media%20terms-blue?style=flat-square)](LICENSE)
 
 </div>
 
@@ -256,6 +257,8 @@ Each record in `data/exercises.json` follows this structure:
 
 ### 1 — Barbell Bench Press · Chest
 
+<img src="videos/0025-EIeI8Vf.gif" width="150" align="right" alt="Barbell Bench Press" />
+
 > **Equipment:** Barbell · **Target:** Pectorals · **Secondary:** Triceps, Shoulders · **Media ID:** `EIeI8Vf`
 
 The Barbell Bench Press is the cornerstone of chest training and one of the "Big Three" powerlifting movements. Lying flat on a bench, you lower a loaded barbell to your chest and press it back up explosively. It simultaneously recruits the pectorals, triceps, and anterior deltoids, making it the single most effective exercise for upper body pushing strength and chest mass development.
@@ -263,6 +266,8 @@ The Barbell Bench Press is the cornerstone of chest training and one of the "Big
 **Key cues:** Retract and depress your scapulae before unracking. Keep your feet flat on the floor, arch your lower back naturally, and maintain a shoulder-width grip. Lower the bar under control to mid-chest and drive up through the heels.
 
 ### 2 — Barbell Deadlift · Upper Legs / Back
+
+<img src="videos/0032-ila4NZS.gif" width="150" align="right" alt="Barbell Deadlift" />
 
 > **Equipment:** Barbell · **Target:** Glutes · **Secondary:** Hamstrings, Lower Back · **Media ID:** `ila4NZS`
 
@@ -272,6 +277,8 @@ The Barbell Deadlift is widely regarded as the ultimate full-body strength exerc
 
 ### 3 — Barbell Full Squat · Upper Legs
 
+<img src="videos/0043-qXTaZnJ.gif" width="150" align="right" alt="Barbell Full Squat" />
+
 > **Equipment:** Barbell · **Target:** Glutes · **Secondary:** Quadriceps, Hamstrings, Calves, Core · **Media ID:** `qXTaZnJ`
 
 Often called "the king of all exercises," the Barbell Full Squat demands coordinated strength across the entire lower body and core. Breaking parallel maximizes glute and hamstring activation compared to partial squats. It is the foundation of nearly every strength and hypertrophy program.
@@ -279,6 +286,8 @@ Often called "the king of all exercises," the Barbell Full Squat demands coordin
 **Key cues:** Bar on upper traps (high bar) or rear deltoids (low bar). Brace your core before descent, push knees out in line with toes, sit into your hips, and descend until your thighs pass parallel to the floor. Drive through the whole foot to stand.
 
 ### 4 — Dumbbell Biceps Curl · Upper Arms
+
+<img src="videos/0294-NbVPDMW.gif" width="150" align="right" alt="Dumbbell Biceps Curl" />
 
 > **Equipment:** Dumbbell · **Target:** Biceps · **Secondary:** Forearms · **Media ID:** `NbVPDMW`
 
@@ -288,6 +297,8 @@ The Dumbbell Biceps Curl is the most recognized isolation exercise for the arms.
 
 ### 5 — Pull-up · Back
 
+<img src="videos/0652-lBDjFxJ.gif" width="150" align="right" alt="Pull-up" />
+
 > **Equipment:** Body Weight · **Target:** Lats · **Secondary:** Biceps, Forearms · **Media ID:** `lBDjFxJ`
 
 The Pull-up is the gold standard bodyweight exercise for upper body pulling strength. It primarily develops the latissimus dorsi — creating the coveted V-taper — while heavily involving the biceps, rear deltoids, and core stabilizers. It scales from beginner (band-assisted) to advanced (weighted).
@@ -295,6 +306,8 @@ The Pull-up is the gold standard bodyweight exercise for upper body pulling stre
 **Key cues:** Dead hang from an overhand grip, shoulder-width or slightly wider. Initiate with your lats by depressing your shoulder blades, then pull your chest toward the bar. Lower fully between reps to maintain range of motion.
 
 ### 6 — Dumbbell Lateral Raise · Shoulders
+
+<img src="videos/0334-DsgkuIt.gif" width="150" align="right" alt="Dumbbell Lateral Raise" />
 
 > **Equipment:** Dumbbell · **Target:** Delts · **Secondary:** Traps · **Media ID:** `DsgkuIt`
 
@@ -428,6 +441,7 @@ console.log("First 6 exercises:", randomWorkout.map(e => e.name));
 
 This repository is a **developer setup wizard and structured exercise dataset** — exercise metadata, multilingual instruction translations, and 180×180 exercise media.
 
-- **Exercise media (images & GIFs) is © [Gym visual](https://gymvisual.com/)** and redistributed here **with permission**, at 180×180 resolution — see [`NOTICE.md`](NOTICE.md). Keep the `© Gym visual — https://gymvisual.com/` attribution intact. Reuse is governed by [Gym visual's Terms & Conditions](https://gymvisual.com/content/3-terms-and-conditions-of-use); obtain your own license there before reusing the media.
+- **Code, tooling, dataset structure, and instruction text** are released under the [MIT License](LICENSE).
+- **Exercise media (images & GIFs) is © [Gym visual](https://gymvisual.com/)** and redistributed here **with permission**, at 180×180 resolution — see [`NOTICE.md`](NOTICE.md) and the media exception in [`LICENSE`](LICENSE). Keep the `© Gym visual — https://gymvisual.com/` attribution intact. Reuse is governed by [Gym visual's Terms & Conditions](https://gymvisual.com/content/3-terms-and-conditions-of-use); obtain your own license there before reusing the media.
 - This repository does **not** claim ownership of the underlying exercise content or media.
 - If you are a rights holder and wish to have anything removed or clarified, please [open an issue](../../issues) or contact the maintainer.
